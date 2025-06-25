@@ -1,6 +1,6 @@
 <nav x-data="{ open: false }" class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="/" class="text-2xl font-bold text-red-600">El Buen Sabor</a>
+        <a href="{{ route('home') }}" class="text-2xl font-bold text-red-600">El Buen Sabor</a>
 
         {{-- Botón hamburguesa para móviles --}}
         <button @click="open = !open" class="md:hidden text-red-600 focus:outline-none">
@@ -15,7 +15,7 @@
 
         {{-- Menú de escritorio --}}
         <ul class="hidden md:flex space-x-6 font-medium text-lg">
-            <li><a href="#menu" class="hover:text-red-500">Menú</a></li>
+            <li><a href="{{ route('menu') }}" class="hover:text-red-500">Menú</a></li>
             <li><a href="#promociones" class="hover:text-red-500">Mis pedidos</a></li>
             <li>
                 <a href="https://wa.me/51999888777" target="_blank" class="flex items-center space-x-2 hover:text-green-700 text-green-600">
@@ -42,7 +42,7 @@
     {{-- Menú desplegable para móviles --}}
     <div x-show="open" class="md:hidden px-4 pb-4">
         <ul class="space-y-2 font-medium">
-            <li><a href="#menu" class="block hover:text-red-500">Menú</a></li>
+            <li><a href="{{ route('menu') }}" class="block hover:text-red-500">Menú</a></li>
             <li><a href="#promociones" class="block hover:text-red-500">Mis pedidos</a></li>
             <li>
                 <a href="https://wa.me/51999888777" target="_blank" class="flex items-center space-x-2 hover:text-green-700 text-green-600">

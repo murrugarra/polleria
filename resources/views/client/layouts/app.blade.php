@@ -12,9 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
-    @include('components.navbar')
-    @yield('content')
-    @include('components.footer')
+    @include('client.components.navbar')
+    @yield('client.content')
+    @include('client.components.footer')
     <script src="//unpkg.com/alpinejs" defer></script>
 </body>
 </html>
